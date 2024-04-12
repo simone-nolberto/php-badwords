@@ -1,0 +1,34 @@
+<?php
+
+
+var_dump($_POST);
+
+// $sentence = $_GET['userSentence'];
+// $bad_word = $_GET['badWord'];
+
+// var_dump($sentence, $bad_word);
+
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Censuratore automatico</title>
+</head>
+<body>
+    
+
+<form action="script.php" method="post">
+
+<span>Scrivi qui la tua frase: <input type="text" name="userSentence" id=""></span>
+<span>Scrivi qui una parolaccia: <input type="text" name="badWord" id=""></span>
+<button type="submit">Invia</button>
+
+</form>
+
+
+</body>
+</html>
