@@ -15,6 +15,7 @@
 <span>Scrivi qui una parolaccia: <input type="text" name="badWord" id=""></span>
 <button type="submit">Invia</button>
 
+
 </form>
 
 
