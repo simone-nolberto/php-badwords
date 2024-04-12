@@ -9,7 +9,7 @@
 <body>
     
 
-<form action="script.php" method="post">
+<form action="result.php" method="post">
 
 <span>Scrivi qui la tua frase: <input type="text" name="userSentence" id=""></span>
 <span>Scrivi qui una parolaccia: <input type="text" name="badWord" id=""></span>
