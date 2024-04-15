@@ -4,9 +4,9 @@
 
 // var_dump($_POST);
 
-$sentence = $_POST['userSentence'];
+$sentence = $_GET['userSentence'];
 $sentenceLength = strlen($sentence);
-$bad_word = $_POST['badWord'];
+$bad_word = $_GET['badWord'];
 // $sentence_words = explode(" " ,$sentence);
 
 $warning = '';
