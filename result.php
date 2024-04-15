@@ -11,6 +11,7 @@ $bad_word = $_GET['badWord'];
 
 $warning = '';
 $politeSentence = '';
+$politeSentenceLength = '';
 
 // if (in_array("$bad_word", $sentence_words)) {
 //    $warning = "sei molto scurrile, sarai censurato!";
@@ -27,10 +28,12 @@ if ($sentenceLength === 0) {
 } else if (str_contains($sentence, "$bad_word")) {
     $warning = 'sei molto scurrile, sarai censurato!';
     $politeSentence = str_ireplace("$bad_word", "***", $sentence);
+    $politeSentenceLength = strlen($politeSentence);
 
 } else {
     $warning = "Bravo, usi un linguaggio nobile, pertanto la tua frase non ha bisogno di censura!";
     $politeSentence = $sentence;
+    $politeSentenceLength = $sentenceLength;
 }
 
 // var_dump($sentence, $bad_word, $sentenceLength, $sentence_words);
@@ -58,6 +61,7 @@ if ($sentenceLength === 0) {
     <p><?php echo $warning ?></p>
     <p>La nuova frase è: </p>
     <p> <?php echo $politeSentence ?></p>
+    <p> ed è lunga <?php echo $politeSentenceLength ?> caratteri.</p> 
 
 </div>
 
